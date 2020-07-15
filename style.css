@@ -1,0 +1,34 @@
+.card-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  img {
+    width: 50px;
+  }
+  
+  .btn-history {
+    margin: 5px;
+  }
+  
+  body {
+    background-color: peachpuff;
+  }
+  
+  #today {
+    background-color: blue;
+  }
+  
+  #weather {
+    background-color: lightblue;
+  }
+  
+  .card-forecast {
+    background-color: red;
+    color: white;
+  }
