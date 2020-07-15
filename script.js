@@ -7,7 +7,7 @@ var cityHistory = [];
 var temperature;
 var humidity;
 var windSpeed;
-var city = "Hershey";
+var city = "Brooklyn";
 var icon;
 var futureWeather;
 
@@ -66,7 +66,7 @@ function ajaxWeatherQuery(popPage) {
   var queryCityURL =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
     city +
-    "&units=imperial&appid=5907a64e4c4cf40021f641c3ddf19281";
+    "&units=imperial&appid=67f994b6ac288057dbc392568e7e908b";
   //ajax to call the above URL for the city
   $.ajax({
     url: queryCityURL,
@@ -83,7 +83,7 @@ function ajaxWeatherQuery(popPage) {
 
     //using lat and lon to get the UV index
     var queryUVURL =
-      "https://api.openweathermap.org/data/2.5/uvi?appid=5907a64e4c4cf40021f641c3ddf19281&lat=" +
+      "https://api.openweathermap.org/data/2.5/uvi?appid=67f994b6ac288057dbc392568e7e908b&lat=" +
       lat +
       "&lon=" +
       lon;
@@ -99,7 +99,7 @@ function ajaxWeatherQuery(popPage) {
   var queryFutureURL =
     "https://api.openweathermap.org/data/2.5/forecast?q=" +
     city +
-    "&units=imperial&appid=5907a64e4c4cf40021f641c3ddf19281";
+    "&units=imperial&appid=67f994b6ac288057dbc392568e7e908b";
   $.ajax({
     url: queryFutureURL,
     method: "GET",
